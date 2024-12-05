@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family:'Montserrat', sans-serif;
+    color:#594a4e;
+    background-color: #faeee7;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+.texto-destacado{
+    font-size: 1.75em;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, h2,p {
+    font-family: 'Inconsolata', monospace;
+    color:#0f0d0e;
+}
+
+h3, a {
+    font-family: 'Roboto', sans-serif;
+    color:#1b1516;
+}
+
+.contenedor {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caja-flexible {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.fondo_imagen {
+    background-image: 
+    url(../imagenes/hatha_mar_pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+
+}
+.portada.fondo-imagen{
+    height: 100vh;
+    padding: 30px;
+}
+
+.portada h1{
+    font-size: 3.438em;
+}
+.portada p{
+    font-size: 1.563em;
+}
+
+
+.menu {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:999;
+    background-color: rgb(208, 156, 156);
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin:0;
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu ul a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: bisque;
+    color: black;
+    margin-left:8px;
+    border-radius:5px;
+}
+.menu ul a:hover{
+    background-color: rgb(196, 155, 106);
+}
+.menu ul a:active{
+    background-color: rgb(180, 107, 19);
+}
+
+.fila {
+    display: flex;
+}
+.fila > div {
+    padding: 10px;
+}
+.justificado-centrado {
+    justify-content: center;
+
+}
+
+.justificado-alrededor {
+    justify-content:space-around;
+
+}
+.justificado-entre {
+    justify-content:space-between;
+}
+.col-sm-33 {
+    width: 33.33333%;
+}
+.col-sm-50{
+    width: 50%;
+}
+.col-sm-100{
+    width: 100px; ;
+}
+iframe {
+    width: 100%;
+}
+
+section> h2{
+    text-align: center;
+
+}
+main > section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.pie{
+    background-color: rgb(208, 156, 156);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+input,
+textarea {
+    font-family: inherit;
+}
+
+#formularioContacto label,
+#formularioContacto input,  
+#formularioContacto textarea {
+    display: block;        
+    width: 100%;
+}
+#formularioContacto label{
+    margin-bottom: 10px;
+}
+
+/*.tarjeta{
+    border: 1px rgb(208, 156, 156);
+    text-align: center;
+    border-radius: 5px;
+    padding:10px;*/
+
+
+    
+
+
+
+#formularioContacto input[type=submit]{
+    background-color:rgb(208, 156, 156);
+    color: bisque;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+.no-lista {
+    list-style-type: none;
+}
+.pie a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+table th{
+    width: 10em;
+    padding: 1em;
+
+}
+table {
+    border-collapse:collapse ;
+}
+tr:nth-of-type(1)> th{
+    background-color:rgb(155, 121, 121);
+}
+
+td[colspan]{
+    text-align:center;
+    background-color:rosybrown;
+    font-weight: bold;
+}
+.meditacion {
+    background-color: rgb(221, 194, 194);
+
+}
+.dinamico {
+    background-color: honeydew;
+
+}
+.hatha {
+    background-color: antiquewhite;
+}
+.suave {
+    background-color:rgb(243, 166, 158);
+}
+    
+tr:nth-of-type(2)> th,
+tr:nth-of-type(3)> th,
+tr:nth-of-type(4)> th,
+tr:nth-of-type(5)> th,
+tr:nth-of-type(6)> th,
+tr:nth-of-type(7)> th,
+tr:nth-of-type(8)> th{
+    background-color:rgb(223, 236, 223) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIAQUERIES*/
+
+
+.boton-abrir,
+.boton-cerrar{
+    display: none;
+}
+
+
+@media(min-width:768px){
+    .fondo-imagen {
+        background-image: 
+        url(../imagenes/hatha_mar_tablet.jpg);
+    }
+   
+    
+    .col-md-33 {
+        width: 33.33333%;
+    }
+    .col-md-50{
+        width: 50%;
+    }
+    .col-md-100{
+        width: 100px; ;
+    }
+}
+
+
+@media(min-width:1024px){
+.fondo-imagen {
+    background-image: 
+    url(../imagenes/hatha_mar_pc.jpg);
+}   
+
+
+.col-lg-33 {
+    width: 33.33333%;
+}
+.col-lg-50{
+    width: 50%;
+}
+.col-lg-100{
+    width: 100px; ;
+}
+}
+
+
+@media(max-width:560px){
+
+    #ElMenu:target .boton-cerrar,
+    .boton-abrir {
+        display: inline-block;
+    }
+    #ElMenu:target .boton-abrir,
+    .menu-opciones {
+        display: none!important;
+    }
+    #ElMenu:target .menu-opciones{
+        display: block !important;
+        width: 100%;
+    }
+    .menu ul a {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .fila{
+        flex-direction: column;
+  }
+  .ms-escondido{
+    display: none;
+  }
+
+
+}
+
+
+
+
